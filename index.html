@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Mundo del Fútbol</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1, h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 2px;
+        }
+        h1 {
+            font-size: 4rem;
+        }
+
+        nav {
+            background-color: #111;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        nav a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #333;
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 40px;
+            scroll-margin-top: 50px;
+        }
+        #inicio    { background-color: #2e7d32; color: white; }
+        #historia  { background-color: #fff3cd; }
+        #reglas    { background-color: #d6eaf8; }
+        #jugadores { background-color: #f5cba7; }
+        #video     { background-color: #e8daef; }
+
+        
+        .redonda {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 20px;
+            display: block;
+            margin: 20px 0;
+        }
+
+        
+        .pantalla-completa {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            display: block;
+        }
+
+        
+        .dos-columnas {
+            display: flex;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .columna {
+            flex: 1;
+        }
+        .linea {
+            width: 2px;
+            background-color: #333;
+        }
+
+        
+        .video-contenedor {
+            max-width: 800px;
+            margin: 30px auto 0;
+        }
+        .video-contenedor iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: none;
+            border-radius: 15px;
+        }
+        .video-respaldo {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+       
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        footer a {
+            color: #81c784;
+        }
+
+        .boton-subir {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #2e7d32;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+        }
+        .boton-subir:hover {
+            background-color: #1b5e20;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#reglas">Reglas</a></li>
+            <li><a href="#jugadores">Jugadores</a></li>
+            <li><a href="#video">Video</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio">
+        <h1>Hola amigos del fútbol</h1>
+        <p>Vas a ver lo mejor del fútbol.</p>
+    </section>
+
+    <section id="historia">
+        <h2>Historia</h2>
+        <p>La historia del fútbol mundial:
+            <a href="https://www.fifa.com/es/about-fifa/values/history" target="_blank">FIFA</a>
+            <a href="https://youtu.be/eJqVJhk8AC4?si=azU5_r9ZA7zj2iGh"target="_blank">historia futbol argentino</a>
+            <p>
+1. Los Orígenes y el Amateurismo (1867–1930)
+
+• El primer partido: El 20 de junio de 1867 se jugó el primer encuentro de fútbol documentado en el país, organizado en los terrenos del Buenos Aires Cricket Club (en los Bosques de Palermo, cerca del actual Planetario) por inmigrantes británicos liderados por los hermanos Thomas y James Hogg.
+• La fundación de la AFA: El 21 de febrero de 1893, el docente escocés Alexander Watson Hutton fundó la Argentine Association Football League, que con el tiempo se convertiría en la actual Asociación del Fútbol Argentino (AFA), la federación más antigua de Sudamérica y la octava del mundo.
+• El Alumni y el fútbol de elite: Durante los primeros años, el deporte estuvo ligado a colegios ingleses y clubes de la comunidad británica. El Alumni Athletic Club dominó la era amateur ganando múltiples campeonatos.
+• La transformación popular y el potrero: Con los años, el juego se trasladó a los barrios y a los potreros, dando nacimiento a clubes de gran arraigo obrero y popular como Boca Juniors, River Plate, Independiente y Racing Club.
+
+2. El Profesionalismo (1931 en adelante)
+
+• Huelga y profesionalización: Tras años de tensiones y un "amateurismo marrón" (donde los jugadores cobraban por izquierda), una huelga de futbolistas en el verano de 1931 forzó la creación de la Liga Argentina de Football, dando inicio al profesionalismo oficial ese mismo año (con Boca Juniors como primer campeón profesional).
+• Las grandes épocas de los clubes:
+	• En los años 40, River Plate brilló con "La Máquina", una delantera legendaria integrada por Muñoz, Moreno, Pedernera, Labruna y Loustau.
+	• Los clubes argentinos comenzaron a dominar el continente con la creación de la Copa Libertadores de América en los años 60 y 70 (con hitos de Independiente, Estudiantes de La Plata, Boca Juniors y River Plate).
+• Evolución de los torneos: A lo largo de las décadas, el formato de la Primera División cambió en numerosas ocasiones, pasando de largos torneos anuales a metropolitanos, nacionales, Apertura y Clausura, copas de la liga y reestructuraciones con hasta 30 equipos.
+
+3. La Selección Argentina y la Gloria Mundial
+
+La Selección Argentina se ha consolidado como una potencia mundial, obteniendo títulos en todas las máximas escalas:
+• Copas del Mundo Masculinas:
+	• Argentina 1978: Primer título mundial bajo la dirección técnica de César Luis Menotti y con Mario Kempes como figura.
+	• México 1986: Segundo campeonato con una actuación histórica de Diego Armando Maradona, autor de hitos como "La mano de Dios" y "El gol del Siglo" ante Inglaterra.
+	• Catar 2022: Tercer título mundial bajo el mando de Lionel Scaloni y liderados en la cancha por Lionel Messi, venciendo a Francia en una emotiva final por penales.
+• Torneos continentales: Múltiples consagraciones en la Copa América (incluyendo el histórico bicampeonato reciente en 2021 y 2024), además de medallas olímpicas y títulos juveniles Sub-20.
+• Fútbol Femenino: Con un crecimiento sostenido de la Selección Femenina y la profesionalización de la Primera División Femenina, el país ha visibilizado cada vez más el 21 de agosto como el Día de las Futbolistas Argentinas.</p>
+        </p>
+        <img src="https://www.clarin.com/2024/10/04/KhsU3qcBX_2000x1500__1.jpg" alt="Estadio de fútbol lleno de hinchas" class="redonda">
+    </section>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTojlHDUZxn2Mv37gTxEhQYjWtZWSoLT1mW8aSVbBizsQ&s=10" alt="Estadio La Fortaleza" class="pantalla-completa">
+
+    <section id="reglas">
+        <h2>Reglas</h2>
+        <p>Las reglas del fútbol mundial:
+            <a href="https://www.theifab.com/es/laws" target="_blank">IFAB</a>
+            <p>El fútbol argentino se rige por las reglas oficiales de la FIFA/IFAB, sumado a las normativas de la Asociación del Fútbol Argentino (AFA), que desde mediados de 2026 incorporó nuevas modificaciones para evitar la pérdida de tiempo y aumentar el ritmo de juego:
+
+Reglas principales y recientes del fútbol argentino
+
+• Límite de tiempo en saques (5 segundos): El árbitro cuenta hasta 5 segundos para ejecutar un saque lateral o un saque de arco.
+	• Si se demora el saque lateral, la posesión pasa al equipo rival.
+	• Si se demora el saque de arco, se le concede un tiro de esquina (córner) al equipo contrario.
+• Cambios de jugadores (10 segundos): El futbolista reemplazado tiene un máximo de 10 segundos para abandonar el campo. Si tarda más, el jugador que ingresa deberá esperar un minuto fuera de la cancha antes de poder entrar.
+• Atención médica en el campo: Si un jugador solicita asistencia médica y se detiene el juego, deberá permanecer fuera del terreno por un minuto (excepto si la lesión fue producto de una falta que originó tarjeta).
+• La "Ley Prestianni" (cubrirse la boca): Está prohibido y es motivo de expulsión directa que un jugador o técnico se cubra la boca con la mano o la camiseta para hablar con un rival o el árbitro en una discusión.
+• Intervenciones del VAR (en Primera División): El VAR puede revisar y corregir segundas amarillas mal mostradas, errores de identidad de jugadores, y tiros de esquina o saques de arco concedidos de forma equivocada de manera inmediata.
+• Cantidad de jugadores y cambios generales:
+	• El partido comienza con 11 jugadores por equipo (mínimo 7 para no suspenderse).
+	• Se permiten hasta 5 cambios por equipo, divididos en 3 ventanas por partido (sin contar las modificaciones hechas durante el entretiempo).
+	• Sistema de puntos: 3 puntos por victoria, 1 por empate y 0 por derrota.</p>
+        </p>
+    </section>
+
+    <section id="jugadores">
+        <h2>Jugadores</h2>
+        <p>Últimas noticias sobre los mejores jugadores:
+            <a href="https://www.francefootball.fr" target="_blank">France Football</a>
+          
+        </p>
+
+        <div class="dos-columnas">
+
+            <div class="columna">
+                <h3>Lionel Messi</h3>
+                <p>Delantero, campeón del mundo en Qatar 2022 y ganador de ocho Balones de Oro.</p>
+            </div>
+
+            <div class="linea"></div>
+
+            <div class="columna">
+                <h3>Aitana Bonmatí</h3>
+                <p>Mediocampista española, campeona del mundo en 2023 y ganadora del Balón de Oro femenino.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="video">
+        <h2>Video</h2>
+        <p>Mirá videos de fútbol masculino y femenino a nivel selección:
+            <a href="https://www.youtube.com/fifa" target="_blank">canal de FIFA en YouTube</a>
+        </p>
+
+        <div class="video-contenedor">
+            <iframe src="https://www.youtube.com/embed/IaPp9fbiqEY"
+                    title="Video de fútbol"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+        </div>
+
+       
+        <p class="video-respaldo">
+            ¿No se ve el video?
+            <a href="https://www.youtube.com/watch?v=IaPp9fbiqEY" target="_blank">Ver en YouTube</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>Trabajo práctico: El mundo del fútbol</p>
+        <p>Hecho por: Leon Bresciani - 2026</p>
+        <p>Fuentes:
+            <a href="https://www.fifa.com" target="_blank">FIFA</a> |
+            <a href="https://www.theifab.com/es/laws" target="_blank">IFAB</a> |
+            <a href="https://www.youtube.com/fifa" target="_blank">YouTube</a>
+            <a href=""></a>
+        </p>
+    </footer>
+
+    <a href="#inicio" class="boton-subir" title="Volver al inicio">⬆</a>
+
+</body>
+</html>
